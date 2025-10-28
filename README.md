@@ -42,11 +42,33 @@ gcloud auth application-default login
 ## 📊 Estructura del Proyecto
 ```
 music-recommender/
-├── ingestion/          # Sistema de ingesta de datos
-├── api/                # Backend FastAPI
-├── dbt/                # Transformaciones
-└── frontend/           # UI React/Next.js
+├── ingestion/
+│   ├── clients/
+│   ├── processors/
+│   ├── storage/
+│   └── utils/
+├── api/
+├── dbt/
+├── tests/
+└── logs/
 ```
+
+## 📊 Estructura del Proyecto
+```
+📁 MUSIC-RECOMMENDER
+  📁 ingestion
+    📁 clients
+    📁 processors
+    📁 storage
+    📁 utils
+  📁 api
+  📁 dbt
+  📁 tests
+  📁 logs
+  📄 .env
+  📄 .gitignore
+  📄 README.md
+
 
 ## 🎯 Uso
 
@@ -59,6 +81,7 @@ python main.py
 ## 📝 Licencia
 
 MIT
+
 
 
 
